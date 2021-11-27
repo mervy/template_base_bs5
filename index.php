@@ -38,7 +38,7 @@
             <?php for ($i = 0; $i < $totalTemplates;$i++):?>
             
             <div class="item">
-                <a href="template-<?=$i?>/">
+                <a href="templates-<?=$i?>/">
                     <img src="https://picsum.photos/id/<?=$i*7?>/215/120" alt="">
                 </a>
             </div>
