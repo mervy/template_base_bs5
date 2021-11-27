@@ -1,0 +1,20 @@
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+.banner{
+    background:url("https://cdn2.geready.com/digital/sites/default/files/cyber-security-2-369x245.jpg");
+}
+.banner-transp {
+    background-color: rgba(245, 245, 245, 0.27);  
+}
+/*.carousel-caption-transp {background-color: rgba(245, 245, 245, 0.2);  }*/
+
+/**Back to top*/
+.totop {
+    cursor: pointer;
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    display:none;
+}
+/**Back to top*/

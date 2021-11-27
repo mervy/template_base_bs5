@@ -1,0 +1,68 @@
+/*****************************************
+//Estilos gerais
+*****************************************/
+* {margin: 0; padding: 0}
+body{width: 80%; margin: 0 auto;}
+#logo img {float: left; vertical-align: middle; height: 90px;}
+#busca {float: right; }
+h1, h2 {padding: 3px; margin: 5px;}
+nav {clear: both; padding: 5px; background: navy;}
+nav a{ text-decoration: none; color: white; padding: 5px}
+nav a:hover{background: black; padding: 5px}
+nav li {display: inline; margin: 10px; padding: 5px}
+#container { padding: 3px;margin: 3px;width: 100%;}
+#content {float: left; width: 65%;}
+#lateral {float: right; width: 32%;}
+footer {text-align: center; background: navy; color: white; clear: both;}
+#content h1{font-size: 3em}
+#content .post {clear:both;}
+#content .post h1{margin-left: 20px;}
+#content .post p {margin-left: 30px; }
+#content .img_post img {float:left; vertical-align: top; width: 300px; height: 180px;}
+.autor, .data, .categoria {margin-right: 20px; color: red; font-style: italic}
+#separador {height: 10px; clear: both}
+nav select {display: none;}/*Esconde o select de resoluções altas*/
+
+/* Tela de no máximo 480 pixels de largura */
+@media (min-width: 180px) and (max-width: 480px) {
+    body {width: 90%; background: #008080;} 
+    #busca, #lateral {display: none;}
+    #content, .post {width: 100%;}
+    #logo img, #content .img_post img {width: 30%; height: 30%} 
+    #content .img_post img{vertical-align: top}
+    header h2 {display: none;}
+    header h1{color: yellow; font-size: 10px;}
+    nav, nav li {margin: 1px; padding: 1px; background:  #808000 }   
+    /*Muda o menu de navegação*/
+    nav ul     { display: none; }
+    nav select { display: inline-block; }   
+}
+/* Tela de no máximo 768 pixels de largura */
+@media (min-width: 481px) and (max-width: 768px) { 
+    body {width: 90%; background: red;} 
+    #busca, #lateral {display: none;}
+    #content, .post {width: 100%;}
+    #logo img, #content .img_post img {width: 30%; height: 30%} 
+    #content .img_post img{vertical-align: top}
+
+}
+/* Tela de no mínimo 768 pixels e no máximo 980 pixels */
+@media (min-width: 768px) and (max-width: 980px) { 
+    body {
+        background:  #9B410E;
+        color:  #B8E834
+    }  
+}
+/* Tela de no mínimo 1200 pixels de largura */
+@media (min-width: 1200px) { 
+     body {
+        background:   #B8E834;
+        color:  #B8E834
+    }  
+    .container {}
+    .menu {}
+    .content {}    
+}
+
+
+

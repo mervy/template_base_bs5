@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/*
+font-family: 'Asap', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Yellowtail', cursive;
+*/
+body {
+    font-family: Nunito Sans, sans-serif;
+    color: #1c1c1c;
+}
+h1, h2, h3 {
+    font-family: Asap, sans-serif;
+    color: #000;
+}
+.botao {
+    color: #fff;
+    text-decoration: none;
+    background: #191970;
+    padding: 10px 30px;
+    font-size: .9em;
+    border-radius: 3px;
+
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bfd0d8;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: Yellowtail, serif;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+nav ul li{
+    text-align: center;
+    width: 50%;
+
+}
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    margin: 3px 0;
+    text-decoration: none;
+    color: #fff;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../img/fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+   color: rgb(84, 149, 202);
+}
+header p{
+    margin-bottom: 2em;
+}
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color: #bfd0d8;
+    
+}
+#sobre h2{
+    color: #000;    
+}
+#sobre p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+    color: #fff;
+}
+#sobre .botao {
+    background-color: #f1f1f1;
+    color: #1c1c1c;
+}
+#servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+#servicos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+#fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+#fotos h2 {
+    margin-bottom: 20px;
+}
+#fotos img {
+    width: 100%;
+}
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+#contato h2 {
+    color: #000;
+
+}
+#contato img {
+    width: 30px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #bfd0d8; 
+}
+footer a {
+    text-decoration: none;
+    color: #00ffff;
+}
+@media screen and (min-width: 768px){
+    nav{
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+}

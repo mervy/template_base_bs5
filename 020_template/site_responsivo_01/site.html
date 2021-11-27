@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+        <script src="web_files/js/jquery-2.0.3.min.js"></script>
+        <script>
+            $(function() {
+                $("#submit").hide();
+                $("#page-changer select").change(function() {
+                    window.location = $("#page-changer select option:selected").val();
+                })
+            });
+        </script>
+
+    </head>
+    <body>
+        <header>            
+            <section id="logo"><img src="imagens/logo.jpg" alt="logo" /></section>
+            <h1>Titulo</h1>
+            <h2>Subtitulo</h2>   
+            <div id="busca">
+                <form method="post" action="/blog/buscar">
+                    <p><input type="text" name="busca" />
+                        <input type="submit" value="Buscar" name="buscar" />
+                    </p>
+                </form>
+            </div>
+        </header>
+        <div id="separador"></div>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Dicas</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+            <form id="page-changer" action="" method="post">
+                <select name="nav">
+                    <option value="">Go to page...</option>
+                    <option value="http://css-tricks.com/">CSS-Tricks</option>
+                    <option value="http://digwp.com/">Digging Into WordPress</option>
+                    <option value="http://quotesondesign.com/">Quotes on Design</option>
+                </select>
+                <input type="submit" value="Go" id="submit" />
+            </form>
+        </nav>
+
+        <section id="container">
+            <aside id="content">
+                <h1>Blog</h1>
+                <article class="post">                         
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <div class="img_post"><img src="imagens/gata1.jpg" /></div>            
+                    <span class="autor">Merovingio</span><span class="data">10/10/2013</span> <span class="categoria">Categoria</span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Aliquam lobortis eleifend cursus. Vestibulum sodales tortor quis nibh consectetur, 
+                        at interdum augue laoreet. In vehicula aliquam enim aliquam tortor, 
+                        eu tincidunt dui iaculis ut. Mauris quis vulputate sapien, sit amet tempus velit. Etiam hendrerit id tellus ac sollicitudin.
+                        Suspendisse ornare mauris sed purus bibendum accumsan.  
+                    </p>                  
+                </article> 
+                <article class="post">                                       
+                    <h2>Pellentesque eget ipsum sed lacu</h2>
+                    <div class="img_post"><img src="imagens/gata2.jpg" /></div> 
+                    <p class="autor data categoria">Merovingio 10/10/2013 Categoria</p>
+                    <p>
+                        Pellentesque eget ipsum sed lacus tincidunt faucibus. 
+                        Vestibulum at aliquam nisi. Integer ornare dolor non neque luctus vehicula.
+                        Pellentesque vestibulum gravida justo. In aliquam ante quis urna imperdiet egestas.
+                        Praesent ullamcorper libero eu suscipit aliquet. Phasellus varius, metus in ullamcorper iaculis, 
+                        justo nisi accumsan nunc, nec cursus est magna tempor quam.
+                    </p>
+                </article> 
+                <article class="post">                                      
+                    <h2>Mauris consectetur pharetra odio</h2>
+                    <div class="img_post"><img src="imagens/gata3.jpg" /></div>    
+                    <span class="autor">Merovingio</span><span class="data">10/10/2013</span> <span class="categoria">Categoria</span>
+                    <p>
+                        Mauris consectetur pharetra odio, sed blandit ligula tempus quis. 
+                        In consequat enim ut lacinia mattis. Nam erat est, venenatis vel tincidunt ut,
+                        semper a justo. Sed tortor nunc, dignissim id sagittis sed, accumsan eget diam. 
+                        Vestibulum aliquam ut libero non fringilla. Fusce semper lorem volutpat magna 
+                        suscipit cursus. Nulla eget tempor diam.
+                    </p>                  
+                </article> 
+                <article class="post">                                         
+                    <h2>Pellentesque eget ipsum sed lacu</h2>
+                    <div class="img_post"><img src="imagens/gata4.jpg" /></div> 
+                    <span class="autor">Merovingio</span><span class="data">10/10/2013</span> <span class="categoria">Categoria</span>
+                    <p>
+                        Pellentesque eget ipsum sed lacus tincidunt faucibus. 
+                        Vestibulum at aliquam nisi. Integer ornare dolor non neque luctus vehicula.
+                        Pellentesque vestibulum gravida justo. In aliquam ante quis urna imperdiet egestas.
+                        Praesent ullamcorper libero eu suscipit aliquet. Phasellus varius, metus in ullamcorper iaculis, 
+                        justo nisi accumsan nunc, nec cursus est magna tempor quam.
+                    </p>
+                </article> 
+            </aside>
+            <aside id="lateral">
+                <section id="categorias">
+                    <h2>Categorias</h2>
+                    <ul>
+                        <li><a href="">Windows</a></li>
+                        <li><a href="">Linux</a></li>
+                        <li><a href="">PHP</a></li>
+                        <li><a href="">Java</a></li>
+                        <li><a href="">Livros</a></li>
+                        <li><a href="">Tecnologia</a></li>
+                    </ul>
+                </section>
+                <section id="destaques">
+                    <h2>Destaques</h2>
+                    <ul>
+                        <li><a href="">Lorem ipsum dolor sit amet</a></li>
+                        <li><a href="">Mauris consectetur pharetra odio</a></li>
+                        <li><a href="">Pellentesque eget ipsum sed lacu</a></li>
+                        <li><a href="">Java</a></li>
+                        <li><a href="">Livros</a></li>
+                        <li><a href="">Tecnologia</a></li>
+                    </ul>
+                </section>
+            </aside>
+        </section>
+        <div id="separador"></div>
+        <footer>
+            &COPY; Copyright - 2014
+        </footer>
+    </body>
+</html>
