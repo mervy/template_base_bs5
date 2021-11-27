@@ -39,11 +39,15 @@
             for ($i = 0; $i < $totalTemplates;$i++):
             ?>
             <div class="item">
-                <a href="template-1">
+                <a href="template-<?$i?>/index.phtml">
                     <img src="https://picsum.photos/id/<?=$i*7?>/215/120" alt="">
                 </a>
             </div>
-            <?php endfor;?>          
+            <?php endfor;?>  
+            
+            <?php
+            phpinfo();
+            ?>
         </div>
     </main>
 </body>
