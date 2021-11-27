@@ -1,5 +1,14 @@
 {
-    "license": [
-       "MIT"       
+    "name": "templates/mervy",
+    "description": "Templates",
+    "minimum-stability": "stable",    
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rogério Soares [mervy]",
+            "email": "rogerio@gkult.net",
+            "role": "Webdeveloper",
+            "homepage": "https://templates.gkult.net"
+        }
     ]
 }
