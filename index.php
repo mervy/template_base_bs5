@@ -31,24 +31,23 @@
 </head>
 
 <body>
+<?php $totalTemplates = 25;?>
     <main>
         <h1>Templates</h1>
         <div class="templates">
-            <?php 
-             $totalTemplates = 25;
-            for ($i = 0; $i < $totalTemplates;$i++):
-            ?>
+            <?php for ($i = 0; $i < $totalTemplates;$i++):?>
+            
             <div class="item">
-                <a href="template-<?$i?>/index.phtml">
+                <a href="template-<?=$i?>/index.phtml">
                     <img src="https://picsum.photos/id/<?=$i*7?>/215/120" alt="">
                 </a>
             </div>
-            <?php endfor;?>  
-            
-            <?php
+
+            <?php endfor;?>     
+        </div>
+        <?php
             phpinfo();
             ?>
-        </div>
     </main>
 </body>
 
