@@ -1,0 +1,66 @@
+/*Reseting all*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+}
+
+/*Navbar*/
+nav{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   justify-content: center;
+   align-content: center;
+}
+.nav {   
+    display: grid;
+    grid-template-columns: 1fr 1fr;      
+    padding: 10px;
+    background-color: blueviolet;   
+}
+.nav ul {
+    display: flex;
+    gap: 20px;
+    align-content: center;
+    justify-content: end;
+    margin-right: 20rem;
+}
+.nav a {
+    font-size: 1.5rem;;
+    color: rgba(2, 2, 2, 0.397);
+}
+/*Index Content*/
+.heroindex {
+    height: 700px;
+    background-image: url("../../../global_assets/img/animes-95.jpg");
+    background-image: cover;
+    background-size: 100%;
+    display: grid;  
+    align-content: center;
+    justify-content: center;
+}
+
+.hero-text {
+    width: 600px;
+    display: grid;
+    justify-items: right;
+}
+.hero-text h1 {
+    font-size: 3rem;    
+}
+.hero-text p{
+    font-size: 1.3rem;
+}
+
+
+/*Footer*/
+footer {
+    float: none;
+    text-align: center;    
+    padding: 30px;
+    background-color: blueviolet;
+    margin-top: 1rem;
+}
