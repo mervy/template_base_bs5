@@ -41,17 +41,17 @@
 
                     <div class="input-group col-lg-12 col-md-9 col-mx-3">
                         <span class="input-group-text" id="basic-addon1">R$ </span>
-                        <input type="text" class="form-control" id="service_cost" placeholder="Valor" aria-label="service_cost" aria-describedby="basic-addon1" onkeyup="formatarMoeda('service_cost');">>
+                        <input type="text" class="form-control" id="service_cost" placeholder="Valor" aria-label="service_cost" aria-describedby="basic-addon1" onkeyup="k(this);">>
                     </div>
 
                     <div class="input-group col-lg-12 col-md-9 col-mx-3">
                         <span class="input-group-text" id="basic-addon1">R$ </span>
-                        <input type="text" class="form-control" id="material_price" placeholder="Custo Material" aria-label="material_price" aria-describedby="basic-addon1" onkeyup="formatarMoeda('material_price');">
+                        <input type="text" class="form-control" id="material_price" placeholder="Custo Material" aria-label="material_price" aria-describedby="basic-addon1" onkeyup="k(this);">
                     </div>
 
                     <div class="input-group col-lg-12 col-md-9 col-mx-3">
                         <span class="input-group-text" id="basic-addon1">R$ </span>
-                        <input type="text" class="form-control" id="net_value" placeholder="Líquido" aria-label="net_value" aria-describedby="basic-addon1" onblur=calcular();>
+                        <input type="text" class="form-control" id="net_value" placeholder="Líquido" aria-label="net_value" aria-describedby="basic-addon1" onblur="calcular()" onfocus="k(this)">
                     </div>
             </form>
         </div>
